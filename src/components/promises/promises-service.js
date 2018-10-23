@@ -1,24 +1,24 @@
 export default {
 
-  promesseUn(shouldResolve) {
+  promiseOne(shouldResolve) {
     return new Promise((resolve, reject) => {
       if (shouldResolve) {
         setTimeout(() => {
-          resolve('promesse 1 exec')
+          resolve('promise 1 exec')
         }, 500)
       } else {
-        reject('promesse 1 echec')
+        reject('promise 1 echec')
       }
     })
   },
-  promesseDeux(shouldResolve) {
+  promiseTwo(shouldResolve) {
     return new Promise((resolve, reject) => {
       if (shouldResolve) {
         setTimeout(() => {
-          resolve('promesse 2 exec')
+          resolve('promise 2 exec')
         }, 100)
       } else {
-        reject('promesse 2 echec')
+        reject('promise 2 echec')
       }
     })
   },
